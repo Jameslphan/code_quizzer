@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(43, 47, 68);
+}
+header h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.4rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 3rem;
+}
+
+/* page content styles */
+.page-content {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.question-box {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(43, 47, 68);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 2px;
+    font-size: 1.7rem;
+}
+
+/* button styles */
+.btn-container {
+    display: grid;
+    gap: 2px;
+    margin:10px;
+}
+
+.btn, .start-btn {
+    background-color: rgb(69, 69, 169);
+    border: 2px solid yellow;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.btn:hover, .start-btn:hover {
+  border-color: yellow;
+  background-color: green;
+  cursor: pointer;
+  transform: translate(-0.1rem);
+  /* transition: transform 150ms; */
+  box-shadow: 0 0.4rem 1.4rem 0 black;
+}
+
+.start-btn {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+/* answer styles */
+.answer-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-top: rgb(76, 86, 117) 1px solid;
+    font-size: 1.7rem;
+}
+.answer-box div {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
