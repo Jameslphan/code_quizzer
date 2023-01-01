@@ -1,8 +1,11 @@
+* {
+    color: white;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 body {
@@ -18,7 +21,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5.4rem;
+    font-size: 4rem;
 }
 
 header div {
@@ -26,6 +29,24 @@ header div {
     justify-content: space-between;
     padding: 20px 40px;
     font-size: 3rem;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: rgb(43, 47, 68);
+    color: yellow;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid ;
+    border-radius: 4px;
+    animation: fadeIn 1s 1.9s backwards;
+}
+
+button:hover {
+    background: yellow;
+    color: rgb(43, 47, 68)
 }
 
 /* page content styles */
@@ -37,18 +58,43 @@ header div {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-
+    margin-top: 25px;
 }
 
-.question-box {
+.instruct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 800px;
     max-width: 80%;
     background-color: rgb(43, 47, 68);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 3px 1px black;
+    font-size: 2.0rem;
+}
+
+.instruct h2 {
+    color: white;
+}
+
+.instruct p {
+    color: white;
+}
+
+.question-box {
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(43, 47, 68);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 3px 1px black;
     font-size: 1.7rem;
+    margin: 4.0rem;
+    margin-top: 25px;
 }
 
 /* button styles */
@@ -90,8 +136,8 @@ header div {
     box-shadow: none;
     transform: none;
 }
-/* answer styles */
-.answer-box {
+/* solution styles */
+.solution-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -100,7 +146,7 @@ header div {
     border-top: rgb(76, 86, 117) 1px solid;
     font-size: 1.7rem;
 }
-.answer-box div {
+.solution-box div {
     text-align: center;
     font-size: 1.7rem;
 }
@@ -126,4 +172,8 @@ header div {
 
 .yellow {
     color: yellow;
+}
+
+.black {
+    color: black;
 }
