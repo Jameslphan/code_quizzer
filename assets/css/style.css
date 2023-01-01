@@ -131,13 +131,13 @@ button:hover {
     text-decoration: none;
 }
 
-.btn[disabled]:hover {
+/*.btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
 /* solution styles */
-.solution-box {
+.display {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -146,7 +146,7 @@ button:hover {
     border-top: rgb(76, 86, 117) 1px solid;
     font-size: 1.7rem;
 }
-.solution-box div {
+.display div {
     text-align: center;
     font-size: 1.7rem;
 }
